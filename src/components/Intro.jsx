@@ -15,20 +15,23 @@ const Intro = () => {
         style={{
           display: 'flex', 
           flexDirection: 'column'
-      }}
+        }}
+        sx={{
+            textAlign: 'left'
+        }}
       >
         <Typography
           sx={{
-            m: '1rem'
+            m: '1rem',
           }}
         >
             Hi! I'm a mathematician & web developer
         </Typography>
-        <Typography variant='h3'>Camila Daniels</Typography>
+        <Typography variant='h3' sx={{ m: '1rem' }}>Camila Daniels</Typography>
         <Typography 
           color='lightgrey'
           sx={{
-            m: '1.5rem'
+            m: '1rem'
           }}
         >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
