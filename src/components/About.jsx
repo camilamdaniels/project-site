@@ -1,75 +1,66 @@
 import React from 'react'
+import { Box, Button, Typography } from '@mui/material'
 import FlexBetween from './FlexBetween'
-import { Box, Typography, Button } from '@mui/material'
 
 const About = () => {
   return (
     <FlexBetween
-      ml='4rem'
-      mr='4rem'
-      mt='7rem'
+      height='700px'
+      sx={{
+        backgroundColor: '#e75480',
+        color: 'white',
+      }}
     >
       <Box
         width='50%'
         style={{
           display: 'flex', 
           flexDirection: 'column'
-      }}
-      >
-        <Typography
-          sx={{
-            m: '1rem'
-          }}
-        >
-            Hi! I'm a mathematician & web developer
-        </Typography>
-        <Typography variant='h3'>Camila Daniels</Typography>
-        <Typography 
-          color='lightgrey'
-          sx={{
-            m: '1.5rem'
-          }}
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        </Typography>
-        <Box
-          sx={{
-            m: '1.5rem'
-          }}
-          style={{
-            flexDirection: 'row'
-          }}
-        >
-          <Button
-            sx={{
-              color: 'white',
-              backgroundColor: '#e75480',
-              boxShadow: '0.05rem 0.05rem 0.05rem 0.05rem rgba(238, 135, 166, .4)',
-              borderRadius: '3rem',
-              mr: '2rem'
-            }}
-          >
-            Hire Me
-          </Button>
-          <Button
-            sx={{
-              color: '#e75480'
-            }}
-          >
-            Download Resume
-          </Button>
-        </Box>
-      </Box>
-
-      <Box
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
         }}
-        width='50%'
+        sx={{
+          m: '4rem',
+          textAlign: 'left'
+        }}
       >
-        Profile Picture
+        <Typography>ABOUT ME</Typography>
+        <Typography variant='h5' sx={{ mt: '1rem', mb: '1rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
+        <Typography fontSize='14px'> 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           qui officia deserunt mollit anim id est laborum.
+        </Typography>
+        <Button sx={{ color: 'white' }}>Download Resume</Button>
+      </Box>
+      
+      <Box
+        width='50%'
+        style={{
+          display: 'flex', 
+          flexDirection: 'column'
+        }}
+        sx={{
+          textAlign: 'left',
+          m: '4rem'
+        }}
+      >
+        <Typography variant='h5' sx={{ mt: '1rem', mb: '1rem' }}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore
+        </Typography>
+        <Typography fontSize='14px'>
+           Duis aute irure dolor in 
+           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+           qui officia deserunt mollit anim id est laborum.
+        </Typography>
+
+        <Button sx={{ color: 'white' }}>
+          Github Link
+        </Button>
       </Box>
     </FlexBetween>
   )
