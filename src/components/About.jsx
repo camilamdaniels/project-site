@@ -35,7 +35,9 @@ const About = () => {
           sun are fleeting, but deeply enjoyed.
         </Box>
         <CardActions>
-          <Button sx={{ color: 'white' }}>Download Resume</Button>
+          <a href='https://docs.google.com/document/d/1PT4DQyS9ObEB2jfe8SqZwrignzEiJoDHposFznPW9Js/edit?usp=sharing'>
+            <Button sx={{ color: 'white' }}>View Resume</Button>
+          </a>
         </CardActions>
       </Box>
       
@@ -65,9 +67,11 @@ const About = () => {
         </Box>
 
         <CardActions>
-          <Button sx={{ color: 'white' }}>
-            Github Link
-          </Button>
+          <a href='https://github.com/camilamdaniels'>
+            <Button sx={{ color: 'white' }}>
+              Github Link
+            </Button>
+          </a>
         </CardActions>
       </Box>
     </FlexBetween>

@@ -89,8 +89,12 @@ const Footer = () => {
         </Box>
 
         <Box backgroundColor='#ff80ff' color='white' sx={{ p: '4rem' }}>
-          <LinkedInIcon sx={{ m: '1rem' }}/>
-          <GitHubIcon sx={{ m: '1rem' }}/>
+          <a href='https://github.com/camilamdaniels?tab=repositories'>
+            <GitHubIcon sx={{ m: '1rem' }}/>
+          </a>
+          <a href='https://www.linkedin.com/in/camila-daniels/'>
+            <LinkedInIcon sx={{ m: '1rem' }}/>
+          </a>
         </Box>
 
         <Box backgroundColor='#cc66cc' color='white' sx={{ p: '1rem', fontSize: '12px', fontWeight: 200 }}>

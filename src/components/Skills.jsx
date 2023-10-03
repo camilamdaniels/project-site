@@ -52,7 +52,9 @@ const Skills = () => {
               </Box>
             </CardContent>
             <CardActions>
-              <Button size='small' sx={{ color: 'white' }}>React Projects</Button>
+              <a href='https://github.com/camilamdaniels?tab=repositories'>
+                <Button size='small' sx={{ color: 'white' }}>React Projects</Button>
+              </a>
             </CardActions>
           </Card>
 
@@ -80,7 +82,9 @@ const Skills = () => {
               </Box>
             </CardContent>
             <CardActions>
-              <Button size='small' sx={{ color: 'grey' }}>Coursera</Button>
+              <a href='https://www.coursera.org/specializations/java-object-oriented'>
+                <Button size='small' sx={{ color: 'grey' }}>Coursera</Button>
+              </a>
             </CardActions>
           </Card>
 
