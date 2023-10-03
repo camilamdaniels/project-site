@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/project-site/static/css/main.073c9b0a.css",
-    "main.js": "/project-site/static/js/main.8bcc89ae.js",
+    "main.css": "/project-site/static/css/main.3a20c199.css",
+    "main.js": "/project-site/static/js/main.e8af75b5.js",
     "static/js/787.ee429b7b.chunk.js": "/project-site/static/js/787.ee429b7b.chunk.js",
+    "static/media/widgets-1.jpg": "/project-site/static/media/widgets-1.14234219747ea4f7df27.jpg",
+    "static/media/widgets-2.jpg": "/project-site/static/media/widgets-2.62d9a46ddc1be33f1dc9.jpg",
+    "static/media/avatar.jpg": "/project-site/static/media/avatar.b3b69bed0636954922da.jpg",
+    "static/media/widgets-3.jpg": "/project-site/static/media/widgets-3.e12b82effc4114defaa1.jpg",
+    "static/media/stock-3.jpg": "/project-site/static/media/stock-3.f76a21b37a948b375be2.jpg",
+    "static/media/stock-1.jpg": "/project-site/static/media/stock-1.e1fed87d25025b44e820.jpg",
+    "static/media/calculator.png": "/project-site/static/media/calculator.bae63444a9c66a4cc930.png",
     "static/media/logo.svg": "/project-site/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/project-site/index.html",
-    "main.073c9b0a.css.map": "/project-site/static/css/main.073c9b0a.css.map",
-    "main.8bcc89ae.js.map": "/project-site/static/js/main.8bcc89ae.js.map",
+    "main.3a20c199.css.map": "/project-site/static/css/main.3a20c199.css.map",
+    "main.e8af75b5.js.map": "/project-site/static/js/main.e8af75b5.js.map",
     "787.ee429b7b.chunk.js.map": "/project-site/static/js/787.ee429b7b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.8bcc89ae.js"
+    "static/css/main.3a20c199.css",
+    "static/js/main.e8af75b5.js"
   ]
 }
