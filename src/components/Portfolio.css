@@ -3,6 +3,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 5px;
     text-align: center;
+    position: relative;
   }
 
 .wrapper div {
@@ -18,3 +19,26 @@ img {
     width: 300px;
     height: 300px;
 }
+
+/* .overlay {
+    display: none;
+  }
+  
+  .img:hover {
+    visibility: hidden;
+  }
+  
+  .text {
+    position: absolute;
+    bottom: 0;
+    color: 'white';
+    background-color: 'lightgreen';
+  }
+  
+  .hover:hover {
+    opacity: 0;
+  }
+  
+  .hover:hover + .text {
+    opacity: 1;
+  } */

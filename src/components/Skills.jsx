@@ -12,7 +12,7 @@ import {
 import FlexBetween from './FlexBetween'
 
 const Skills = () => {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 800px)")
+  const isAboveMediumScreens = useMediaQuery("(min-width: 900px)")
   return (
     <div id='skills'>
       <Box>

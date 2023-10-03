@@ -38,7 +38,7 @@ const Portfolio = () => {
       >
         <Box sx={{ fontWeight: 200 }}>PORTFOLIO</Box>
         <Box sx={{ m: '1rem', fontSize: '24px' }}>Recent Work</Box>
-        <Box color='grey' sx={{ fontWeight: 200 }}>Click on images to view projects.</Box>
+        <Box color='grey' sx={{ fontWeight: 200, mb: '2rem' }}>Click on images to view projects.</Box>
 
         <Box
           sx={{
@@ -50,22 +50,35 @@ const Portfolio = () => {
         >
           <div class="wrapper">
             <div class="one">
-              <img src={require('./images/widgets-1.jpg')} />
+              <a href='https://camilamdaniels.github.io/widgets/'>
+                <img src={require('./images/widgets-1.jpg')} class='hover'/>
+                <p class="text">text</p>
+              </a>
             </div>
             <div class="two">
-              <img src={require('./images/stock-1.jpg')} />
+              <a href='https://camilamdaniels.github.io/stock-dashboard/'>
+                <img src={require('./images/stock-1.jpg')} />
+              </a>
             </div>
             <div class="three">
-              <img src={require('./images/widgets-2.jpg')} />
+              <a href='https://camilamdaniels.github.io/widgets/'>
+                <img src={require('./images/widgets-2.jpg')} />
+              </a>
             </div>
             <div class="four">
-              <img src={require('./images/calculator.png')} />
+              <a href='https://camilamdaniels.github.io/calculator/'>
+                <img src={require('./images/calculator.png')} />
+              </a>
             </div>
             <div class="five">
-              <img src={require('./images/widgets-3.jpg')} />
+              <a href='https://camilamdaniels.github.io/widgets/'>
+                <img src={require('./images/widgets-3.jpg')} />
+              </a>
             </div>
             <div class="six">
-              <img src={require('./images/stock-3.jpg')} />
+              <a href='https://camilamdaniels.github.io/stock-dashboard/'>
+                <img src={require('./images/stock-3.jpg')} />
+              </a>
             </div>
           </div>
           {/* <ImageList
