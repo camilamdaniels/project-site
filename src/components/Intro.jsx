@@ -49,8 +49,9 @@ const Intro = () => {
               color: 'white',
               backgroundColor: '#ff80ff',
               boxShadow: '0.05rem 0.05rem 0.05rem 0.05rem rgba(238, 135, 166, .4)',
-              borderRadius: '3rem',
-              mr: '2rem'
+              borderRadius: '2.5rem',
+              mr: '2rem',
+              width: '150px'
             }}
           >
             Hire Me

@@ -1,0 +1,20 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+  }
+
+.wrapper div {
+    aspect-ratio: 1;
+}
+
+.one {
+    width: 300px;
+    height: 300px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+}
