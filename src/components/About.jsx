@@ -1,13 +1,14 @@
 import React from 'react'
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button, Typography, CardActions } from '@mui/material'
 import FlexBetween from './FlexBetween'
 
 const About = () => {
   return (
-    <FlexBetween
+    <div id='about'>
+      <FlexBetween
       height='700px'
       sx={{
-        backgroundColor: '#e75480',
+        backgroundColor: '#ff80ff',
         color: 'white',
       }}
     >
@@ -22,18 +23,20 @@ const About = () => {
           textAlign: 'left'
         }}
       >
-        <Typography>ABOUT ME</Typography>
-        <Typography variant='h5' sx={{ mt: '1rem', mb: '1rem' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</Typography>
-        <Typography fontSize='14px'> 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-           nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           qui officia deserunt mollit anim id est laborum.
-        </Typography>
-        <Button sx={{ color: 'white' }}>Download Resume</Button>
+        <Box sx={{ fontWeight: 200 }}>ABOUT ME</Box>
+        <Box sx={{ mt: '1rem', mb: '1rem', fontSize: '24px' }}>In college, I spent a lot of time solving algorithms by hand - </Box>
+        <Box sx={{ fontSize: '14px' }}> 
+          now I implement them in code to solve engineering problems. 
+          I'm particularly interested in blockchain technology, quantitative 
+          finance, machine learning and robotics. When my compiler isn't yelling at me,
+          I enjoy reading, 
+          cooking, and arts & crafts. Every 6 months or so I like to 
+          step away from the computer and go outside. My moments in the 
+          sun are fleeting, but deeply enjoyed.
+        </Box>
+        <CardActions>
+          <Button sx={{ color: 'white' }}>Download Resume</Button>
+        </CardActions>
       </Box>
       
       <Box
@@ -47,22 +50,28 @@ const About = () => {
           m: '4rem'
         }}
       >
-        <Typography variant='h5' sx={{ mt: '1rem', mb: '1rem' }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore
-        </Typography>
-        <Typography fontSize='14px'>
-           Duis aute irure dolor in 
-           reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-           qui officia deserunt mollit anim id est laborum.
-        </Typography>
+        <Box sx={{ mt: '1rem', mb: '1rem', fontSize: '24px' }}>
+          Over the past several years, I have acquired a robust skillset 
+        </Box>
+        <Box sx={{ fontSize: '14px' }}>
+          inluding but not limited to the following:
+            <ul>
+              <li>Programming skills in Java, JavaScript, React, Node.js, MySQL, Express and MongoDB</li>
+              <li>Experience analyzing statistical data and building financial models</li>
+              <li>Experience building custom dashboards in MS Excel to manage projects</li>
+              <li>Experience facilitating software development team meetings using Agile methodology</li>
+              <li>Experience developing databases and reports on progress of federal programs</li>
+            </ul>
+        </Box>
 
-        <Button sx={{ color: 'white' }}>
-          Github Link
-        </Button>
+        <CardActions>
+          <Button sx={{ color: 'white' }}>
+            Github Link
+          </Button>
+        </CardActions>
       </Box>
     </FlexBetween>
+    </div>
   )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Typography, ImageList, ImageListItem } from '@mui/material'
 
-const itemData = [
+const testItemData = [
   {
     img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
     title: 'Breakfast',
@@ -30,37 +30,40 @@ const itemData = [
 
 const Portfolio = () => {
   return (
-    <Box
-      width='100%'
-      mb='7rem'
-    >
-      <Typography>PORTFOLIO</Typography>
-      <Typography variant='h5' sx={{ m: '1rem' }}>Recent Work</Typography>
-      <Typography color='lightgrey'>Click on images to view source code.</Typography>
-
+    <div id='portfolio'>
       <Box
-        sx={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}      
+        width='100%'
+        mb='7rem'
       >
-        <ImageList
-          sx={{ width: 1200, height: 800 }} cols={3} rowHeight={400}
+        <Box sx={{ fontWeight: 200 }}>PORTFOLIO</Box>
+        <Box sx={{ m: '1rem', fontSize: '24px' }}>Recent Work</Box>
+        <Box color='grey' sx={{ fontWeight: 200 }}>Click on images to view projects.</Box>
+
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+          gap='2rem'      
         >
-          {itemData.map((item) => (
-            <ImageListItem key={item.img}>
-              <img 
-                srcSet={`${item.img}?w=300&h=300&fit=crop&auto=format&dpr=2 2x`}
-                src={`${item.img}?w=300&h=300&fit=crop&auto=format`}
-                alt={item.title}
-                loading='lazy'
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
+          <ImageList
+            sx={{ width: 1200, height: 800 }} cols={3} rowHeight={400}
+          >
+            {testItemData.map((item) => (
+              <ImageListItem key={item.img}>
+                <img 
+                  srcSet={item.img}
+                  src={item.img}
+                  alt={item.title}
+                  loading='lazy'
+                />
+              </ImageListItem>
+            ))}
+          </ImageList>
+        </Box>
       </Box>
-    </Box>
+    </div>
   )
 }
 

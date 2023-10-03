@@ -33,59 +33,61 @@ const WhiteTextField = styled(TextField)({
 
 const Contact = () => {
   return (
-    <Box
-      height='700px'
-      sx={{
-        backgroundColor: '#e75480',
-        color: 'white',
-      }}
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column'
-      }}
-    >
-      <Typography sx={{ mb: '.5rem' }}>HIRE ME</Typography>
-      <Typography sx={{ mb: '5rem' }}>Let's talk, and build something great</Typography>
-
+    <div id='contact'>
       <Box
-        component="form"
+        height='700px'
         sx={{
-          '& > :not(style)': { m: 1, width: '25ch' }
+          backgroundColor: '#ff80ff',
+          color: 'white',
         }}
-        noValidate
-        autoComplete='off'
-        style={{ flexDirection: 'row' }}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          flexDirection: 'column'
+        }}
       >
-          <WhiteTextField id='standard-basic' label='First Name' variant='standard' focused/>
-          <WhiteTextField id='standard-basic' label='Last Name' variant='standard' focused/>
-          <br></br>
-          <WhiteTextField id='standard-basic' label='Email' variant='standard' focused/>
-          <WhiteTextField id='standard-basic' label='Phone' variant='standard' focused/>
-        
-        <div>
-          <WhiteTextField 
-            id='standard-basic' 
-            label='Message' 
-            variant='standard'
-            sx={{ width: '40ch', mb: '3rem' }}  
-            focused
-          />
-        </div>
+        <Box sx={{ mb: '.5rem' }}>HIRE ME</Box>
+        <Box sx={{ mb: '5rem' }}>I look forward to joining your team!</Box>
 
-        <Button 
+        <Box
+          component="form"
           sx={{
-            color: 'white',
-            backgroundColor: 'lightgreen',
-            boxShadow: '0.05rem 0.05rem 0.05rem 0.05rem rgba(238, 135, 166, .4)',
-            borderRadius: '2rem',
+            '& > :not(style)': { m: 1, width: '25ch' }
           }}
+          noValidate
+          autoComplete='off'
+          style={{ flexDirection: 'row' }}
         >
-          Get In Touch
-        </Button>
+            <WhiteTextField id='standard-basic' label='First Name' variant='standard' focused/>
+            <WhiteTextField id='standard-basic' label='Last Name' variant='standard' focused/>
+            <br></br>
+            <WhiteTextField id='standard-basic' label='Email' variant='standard' focused/>
+            <WhiteTextField id='standard-basic' label='Phone' variant='standard' focused/>
+          
+          <div>
+            <WhiteTextField 
+              id='standard-basic' 
+              label='Message' 
+              variant='standard'
+              sx={{ width: '40ch', mb: '3rem' }}  
+              focused
+            />
+          </div>
+
+          <Button 
+            sx={{
+              color: 'white',
+              backgroundColor: 'lightgreen',
+              boxShadow: '0.05rem 0.05rem 0.05rem 0.05rem rgba(238, 135, 166, .4)',
+              borderRadius: '2rem',
+            }}
+          >
+            Get In Touch
+          </Button>
+        </Box>
       </Box>
-    </Box>
+    </div>
   )
 }
 

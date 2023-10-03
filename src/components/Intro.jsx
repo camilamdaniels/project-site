@@ -20,22 +20,22 @@ const Intro = () => {
             textAlign: 'left'
         }}
       >
-        <Typography
+        <Box
           sx={{
             m: '1rem',
           }}
         >
             Hi! I'm a mathematician & web developer
-        </Typography>
-        <Typography variant='h3' sx={{ m: '1rem' }}>Camila Daniels</Typography>
-        <Typography 
-          color='lightgrey'
+        </Box>
+        <Box sx={{ m: '1rem', fontSize: '48px' }}>Cam Daniels</Box>
+        <Box
+          color='grey'
           sx={{
             m: '1rem'
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        </Typography>
+          I am a full stack developer and bootcamp grad with an applied math background whose passionate about data science and machine learning. Let's keep in touch! 
+        </Box>
         <Box
           sx={{
             m: '1.5rem'
@@ -47,7 +47,7 @@ const Intro = () => {
           <Button
             sx={{
               color: 'white',
-              backgroundColor: '#e75480',
+              backgroundColor: '#ff80ff',
               boxShadow: '0.05rem 0.05rem 0.05rem 0.05rem rgba(238, 135, 166, .4)',
               borderRadius: '3rem',
               mr: '2rem'
@@ -57,7 +57,7 @@ const Intro = () => {
           </Button>
           <Button
             sx={{
-              color: '#e75480'
+              color: '#ff80ff'
             }}
           >
             Download Resume
@@ -73,7 +73,12 @@ const Intro = () => {
         }}
         width='50%'
       >
-        Profile Picture
+        <Box 
+          component='img'
+          sx={{ width: 400, height: 400, borderRadius: '50%' }}
+          src={require('./images/avatar.jpg')}
+          alt='avatar'
+        />
       </Box>
     </FlexBetween>
   )

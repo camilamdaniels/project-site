@@ -5,7 +5,11 @@ import About from './About'
 import Contact from './Contact'
 import Portfolio from './Portfolio'
 import Skills from './Skills'
-import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
+import { HashRouter } from 'react-router-dom'
+import Nav from 'react-bootstrap/Nav'
+import NavLink from 'react-bootstrap/NavLink'
 
 const Navbar = () => {
 
@@ -20,21 +24,21 @@ const Navbar = () => {
             color='lightgrey'
         >
             <FlexBetween gap='.25rem'>
-                <Box sx={{ color: '#f8ccd9' }}>
-                    CAMILA
+                <Box sx={{ color: 'lightgrey' }}>
+                    CAM
                 </Box> 
-                <Box sx={{ color: '#e75480' }}> 
+                <Box sx={{ color: '#ff80ff' }}> 
                     DANIELS
                 </Box>
             </FlexBetween>
 
             <FlexBetween gap='2rem'>
-                <Box sx={{ '&:hover': { color: '#e75480' }}}>
+                <Box sx={{ '&:hover': { color: '#ff80ff' }}}>
                     <Link
-                        to='/about'
+                        to='/#about'
                         onClick={() => setSelected('about')}
                         style={{
-                            color: selected === 'about' ? '#e75480' : 'inherit',
+                            color: selected === 'about' ? '#ff80ff' : 'inherit',
                             textDecoration: 'inherit'
                         }}
                     >
@@ -42,12 +46,12 @@ const Navbar = () => {
                     </Link>
                 </Box>
 
-                <Box sx={{ '&:hover': { color: '#e75480' }}}>
+                <Box sx={{ '&:hover': { color: '#ff80ff' }}}>
                     <Link
-                        to='/skills'
+                        to='/#skills'
                         onClick={() => setSelected('skills')}
                         style={{
-                            color: selected === 'skills' ? '#e75480' : 'inherit',
+                            color: selected === 'skills' ? '#ff80ff' : 'inherit',
                             textDecoration: 'inherit'
                         }}
                     >
@@ -55,12 +59,12 @@ const Navbar = () => {
                     </Link>
                 </Box>
 
-                <Box sx={{ '&:hover': { color: '#e75480' }}}>
+                <Box sx={{ '&:hover': { color: '#ff80ff' }}}>
                     <Link
-                        to='/portfolio'
+                        to='/#portfolio'
                         onClick={() => setSelected('portfolio')}
                         style={{
-                            color: selected === 'portfolio' ? '#e75480' : 'inherit',
+                            color: selected === 'portfolio' ? '#ff80ff' : 'inherit',
                             textDecoration: 'inherit'
                         }}
                     >
@@ -68,12 +72,12 @@ const Navbar = () => {
                     </Link>
                 </Box>
                     
-                <Box sx={{ '&:hover': { color: '#e75480' }}}>
+                <Box sx={{ '&:hover': { color: '#ff80ff' }}}>
                     <Link
-                        to='/contact'
+                        to='/#contact'
                         onClick={() => setSelected('contact')}
                         style={{
-                            color: selected === 'contact' ? '#e75480' : 'inherit',
+                            color: selected === 'contact' ? '#ff80ff' : 'inherit',
                             textDecoration: 'inherit'
                         }}
                     >
@@ -82,13 +86,6 @@ const Navbar = () => {
                 </Box>
             </FlexBetween>
         </FlexBetween>
-
-        <Routes>
-            <Route path='/about' component={About}/>
-            <Route path='/skills' component={Skills}/>
-            <Route path='/portfolio' component={Portfolio}/>
-            <Route path='/contact' component={Contact}/>
-        </Routes>
     </Router>
   )
 }

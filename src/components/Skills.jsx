@@ -6,103 +6,114 @@ import {
   Card,
   CardActions,
   CardContent,
-  CardActionArea 
+  CardActionArea,
+  useMediaQuery 
 } from '@mui/material'
 import FlexBetween from './FlexBetween'
 
 const Skills = () => {
+  const isAboveMediumScreens = useMediaQuery("(min-width: 800px)")
   return (
-    <Box>
-      <Typography p='2rem'>SKILLS</Typography>
-      <Typography variant='h5'>Here's what I can do.</Typography>
+    <div id='skills'>
+      <Box>
+        <Box sx={{ fontWeight: 200 }} p='2rem'>SKILLS</Box>
+        <Box sx={{ fontSize: '24px' }}>Here's what I can do.</Box>
 
-      <FlexBetween gap='1rem' p='4rem'>
-        <Card
-          sx={{ 
-            minWidth: 300,
-            minHeight: 300,
-            backgroundColor: '#e75480', 
-            color: 'white',
-            textAlign: 'left', 
-            borderRadius: 0, 
-            p: '1.5rem',
-            boxShadow: 0
+        <FlexBetween 
+          gap='1rem' 
+          p='7rem'
+          sx={isAboveMediumScreens ? {
+              display: 'flex'
+          } : {
+              display: 'flex',
+              flexDirection: 'column'
           }}
         >
-          <CardContent>
-            <Typography sx={{ fontSize: 14 }} color='white' gutterBottom>
-              React
-            </Typography>
-            <Typography variant='body2' color='white'>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size='small' sx={{ color: 'white' }}>Learn More</Button>
-          </CardActions>
-        </Card>
+          <Card
+            sx={{
+                minWidth: 300,
+                minHeight: 300,
+                backgroundColor: '#ff80ff', 
+                color: 'white',
+                textAlign: 'left', 
+                borderRadius: 0, 
+                p: '1.5rem',
+                boxShadow: 0,
+            }}
+          >
+            <CardContent>
+              <Box sx={{ fontSize: 14, color: 'white', mb: '1rem' }} >
+                React
+              </Box>
+              <Box sx={{ color: 'white' }}>
+                As a member of Lambda School's December 2016 full-stack software engineering cohort, I was first exposed to React.
+                I have since taken a number of Udemy courses and followed several online tutorials on the MERN stack. 
+                All of the applications displayed in the portfolio below (including this site!) were built using React.
+              </Box>
+            </CardContent>
+            <CardActions>
+              <Button size='small' sx={{ color: 'white' }}>React Projects</Button>
+            </CardActions>
+          </Card>
 
-        <Card 
-          sx={{ 
-            minWidth: 300,
-            minHeight: 300,
-            backgroundColor: 'white', 
-            textAlign: 'left',
-            color: 'lightgrey',
-            borderRadius: 0,
-            p: '1.5rem',
-            boxShadow: '0'
-          }}
-        >
-          <CardContent>
-            <Typography sx={{ fontSize: 14 }} color='grey' gutterBottom>
-              JavaScript
-            </Typography>
-            <Typography variant='body2' color='grey'>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size='small' sx={{ color: 'grey' }}>Learn More</Button>
-          </CardActions>
-        </Card>
+          <Card
+            sx={{ 
+              minWidth: 300,
+              minHeight: 300,
+              backgroundColor: 'white', 
+              color: 'grey',
+              textAlign: 'left', 
+              borderRadius: 0, 
+              p: '1.5rem',
+              boxShadow: 0
+            }}
+          >
+            <CardContent>
+              <Box sx={{ fontSize: 14, color: 'grey', mb: '1rem' }} >
+                Java
+              </Box>
+              <Box sx={{ color: 'grey' }}>
+                I first started learning Java by completing a Java Programming Fundamentals specialization 
+                on coursera.com taught by faculty at the University of California San Diego. I learned 
+                object-oriented programming principles through these courses. I also completed an introductory
+                Java programming class at the University of the Virgin Islands.
+              </Box>
+            </CardContent>
+            <CardActions>
+              <Button size='small' sx={{ color: 'grey' }}>Coursera</Button>
+            </CardActions>
+          </Card>
 
-        <Card 
-          sx={{ 
-            minWidth: 300,
-            minHeight: 300, 
-            backgroundColor: '#e75480', 
-            textAlign: 'left', 
-            color: 'white',
-            borderRadius: 0,
-            p: '1.5rem',
-            boxShadow: 0
-          }}
-        >
-          <CardContent>
-            <Typography sx={{ fontSize: 14 }} color='white' gutterBottom>
-              Java
-            </Typography>
-            <Typography variant='body2' color='white'>
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-              qui officia deserunt mollit anim id est laborum.
-            </Typography>
-          </CardContent>
-          <CardActions>
-            <Button size='small' sx={{ color: 'white' }}>Learn More</Button>
-          </CardActions>
-        </Card>
+          <Card
+            sx={{ 
+              minWidth: 300,
+              minHeight: 300,
+              backgroundColor: '#ff80ff', 
+              color: 'white',
+              textAlign: 'left', 
+              borderRadius: 0, 
+              p: '1.5rem',
+              boxShadow: 0
+            }}
+          >
+            <CardContent>
+              <Box sx={{ fontSize: 14, color: 'white', mb: '1rem' }} >
+                SQL + MongoDB
+              </Box>
+              <Box sx={{ color: 'white' }}>
+                Although my current portfolio doesn't include full-stack projects, I do have experience building them.
+                In addition to the Mongo experience I gained at Lambda School, I completed a database design and 
+                implementation course that focused on SQL and Microsoft Access at the University of the Virgin Islands.
+              </Box>
+            </CardContent>
+            <CardActions>
+              <Button size='small' sx={{ color: '#ff80ff' }}>Learn More</Button>
+            </CardActions>
+          </Card>
 
-      </FlexBetween>
-    </Box>
+        </FlexBetween>
+      </Box>
+    </div>
   )
 }
 
